@@ -1,0 +1,5 @@
+
+frontend/src/**/*.ts linguist-vendored
+frontend/src/**/*.tsx linguist-vendored
+frontend/vite.config.ts linguist-vendored
+frontend/*.ts linguist-vendored
