@@ -1,0 +1,55 @@
+
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Frontend dependencies and builds
+node_modules/
+dist/
+
+# Local databases and backups
+*.db
+*.sqlite
+*.sqlite3
+backups/
+
+# Editors and OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+
+# Local databases and sensitive files
+*.db
+*.sqlite
+*.sqlite3
+.env
+.env.*
+!.env.example
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Frontend generated files
+node_modules/
+dist/
+
+# Local verification artifacts
+.verification/
+backups/
+
+# OS files
+.DS_Store
+Thumbs.db

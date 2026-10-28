@@ -1,0 +1,114 @@
+/* FDR Sentinel — base: self-hosted Inter, design tokens, reset */
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/inter-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/inter-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+  /* Palette — institutional navy identity */
+  --navy: #16304e;
+  --navy-deep: #0f2338;
+  --navy-soft: #1d3a5f;
+  --navy-line: #0c1f33;
+  --blue: #285a85;
+  --blue-bright: #3e7fb0;
+  --blue-wash: #eaf2fa;
+  --gold: #d9a83c;
+  --page: #eef2f7;
+  --surface: #ffffff;
+  --surface-sunk: #f6f9fc;
+  --text: #24344c;
+  --text-strong: #16283f;
+  --muted: #5d7085;
+  --faint: #8593a5;
+  --border: #d9e2ec;
+  --border-soft: #e6edf4;
+  --good: #1f7a4e;
+  --good-soft: #e5f5ec;
+  --bad: #a83a3a;
+  --bad-soft: #fdeeee;
+  --pending: #8f6410;
+  --pending-soft: #fdf5e2;
+
+  /* Type + shape */
+  --font: "Inter", "Segoe UI Variable", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  --radius-sm: 9px;
+  --radius: 12px;
+  --radius-lg: 15px;
+
+  /* Elevation */
+  --shadow-sm: 0 1px 2px rgba(15, 35, 56, 0.05), 0 2px 6px rgba(15, 35, 56, 0.06);
+  --shadow-md: 0 2px 4px rgba(15, 35, 56, 0.05), 0 12px 30px rgba(15, 35, 56, 0.1);
+  --shadow-pop: 0 6px 16px rgba(10, 25, 45, 0.14), 0 20px 48px rgba(10, 25, 45, 0.18);
+  --shadow-overlay: 0 28px 80px rgba(5, 16, 32, 0.36);
+
+  color-scheme: light;
+}
+
+:root {
+  font-family: var(--font);
+  font-size: 16.5px;
+  font-weight: 500;
+  color: var(--text);
+  background: var(--page);
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+::selection {
+  background: rgba(40, 90, 133, 0.22);
+}
