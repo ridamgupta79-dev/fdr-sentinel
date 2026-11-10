@@ -8,9 +8,38 @@
 
 A web-based financial records management prototype that helps institutions register, review, verify, and track Fixed Deposit Receipts (FDRs) and security deposit release requests through a centralized operational portal.
 
-[Platform Overview](#overview) · [Key Features](#key-features) · [Architecture](#architecture) · [Run Locally](#installation) · [Screenshots](#platform-screenshots)
+**[🌐 LIVE DEMO](https://fdr-sentinel-eight.vercel.app/)** · **[GitHub Repository](https://github.com/ridamgupta79-dev/fdr-sentinel)**
+
+[Overview](#overview) · [Key Features](#key-features) · [Architecture](#architecture) · [Installation](#installation) · [Screenshots](#platform-screenshots)
 
 </div>
+
+---
+
+## 🚀 Live Demo
+
+**Experience FDR Sentinel:**  
+https://fdr-sentinel-eight.vercel.app/
+
+### Demo Credentials
+
+| Field | Demo Access |
+|---|---|
+| Email | `demo.admin@fdrsentinel.in` |
+| Password | `DemoPortal#2026` |
+
+### How to Explore the Platform
+
+1. Open the live demo link above.
+2. Enter the demo email and password.
+3. Sign in to access the FDR Sentinel dashboard.
+4. Explore the dashboard metrics and FDR status distribution.
+5. Visit the FDR Registry to browse and inspect deposit records.
+6. Explore the Verification section and verification history.
+7. Review release requests and their recorded decisions.
+8. Visit Reports and Audit Trail to explore reporting and traceability features.
+
+> **Demo notice:** The platform uses demonstration data. Verification outcomes are not live confirmations from banks. Demo credentials are intended exclusively for public demonstration and should not be used for real financial operations.
 
 ---
 
@@ -26,6 +55,7 @@ The goal is to make the workflow **organized, traceable, and easier to review**.
 
 ## Contents
 
+- [Live Demo](#-live-demo)
 - [Overview](#overview)
 - [Key Features](#key-features)
 - [FDR Lifecycle](#fdr-lifecycle)
@@ -226,7 +256,7 @@ cd fdr-sentinel
 
 ### 2. Set up the backend
 
-Create a Python virtual environment:
+Create a Python virtual environment.
 
 **Windows PowerShell**
 
@@ -243,7 +273,7 @@ pip install -r backend/requirements.txt
 
 Configure the required environment variables. The backend requires a strong, private `FDR_JWT_SECRET`.
 
-For a local PowerShell session, you can generate a secret with:
+For a local PowerShell session, generate a secret with:
 
 ```powershell
 $env:FDR_JWT_SECRET = python -c "import secrets; print(secrets.token_urlsafe(48))"
@@ -267,7 +297,9 @@ npm run dev
 
 Open the local URL printed by Vite, usually:
 
+```text
 http://localhost:5173
+```
 
 ### 4. Access the API
 
@@ -372,6 +404,7 @@ Important limitations:
 - Use synthetic data for public demonstrations.
 - Do not expose sensitive institutional or financial information in screenshots.
 - Configure HTTPS, production secrets, backups, and deployment controls before production use.
+- Restrict public demo accounts to non-sensitive demonstration data and permissions.
 
 ## Roadmap
 
@@ -386,8 +419,9 @@ Important limitations:
 
 **Ridam Gupta**
 
-- GitHub: [ridamgupta79-dev](https://github.com/ridamgupta79-dev)
-- Repository: [FDR Sentinel](https://github.com/ridamgupta79-dev/fdr-sentinel)
+- GitHub: https://github.com/ridamgupta79-dev
+- Repository: https://github.com/ridamgupta79-dev/fdr-sentinel
+- Live Demo: https://fdr-sentinel-eight.vercel.app/
 
 ## Disclaimer
 
